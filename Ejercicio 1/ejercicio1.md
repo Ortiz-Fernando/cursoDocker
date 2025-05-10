@@ -1,6 +1,4 @@
-# Tarea Evaluable Docker - 2EV
-
-#  - Ejercicio 1 -
+# Tarea Evaluable Docker - Ejercicio 1
 
 > Ejercicio 1 - Contenedores en red y Docker
 > Desktop
@@ -8,6 +6,26 @@
 > Realizado por ORTIZ GONZALEZ Fernando
 
 [TOC]
+
+## Configuraciones previas
+
+Se debe crear un repositorio GitHub - debe ser público:
+
+[Visualizar repositorio público aquí](https://github.com/Ortiz-Fernando/cursoDocker)
+
+- Creación del repositorio en GitHub
+
+![new-rep-git](./ejercicio1.assets/new-rep-git.JPG)
+
+- Clonar repositorio en carpeta local
+
+![clone-a-local-rep-git](./ejercicio1.assets/clone-a-local-rep-git.JPG)
+
+- Configuración de ramas para cada ejercicio y su commit al repositorio.
+
+![](./ejercicio1.assets/commit-local-carp-ejerc.JPG)
+
+
 
 ## 1. Crea una red bridge `redej1`
 
