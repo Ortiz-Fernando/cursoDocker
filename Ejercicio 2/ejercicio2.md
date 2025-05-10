@@ -30,12 +30,6 @@ La aplicación permite gestionar y visualizar archivos y directorios desde un na
 
 
 
-## Aplicación FileBrowser
-
-Explicación breve de cómo funciona esta aplicación y qué hace.
-
-La aplicación permite gestionar y visualizar archivos y directorios desde un navegador web (localhost en este caso), como si fuera un explorador de archivos (parecido al *Explorador de Windows* , permitiendo subir, descargar, renombrar y eliminar archivos. Además, se puede compartir, limitar el acceso por contraseña, crear usuarios y privilegios, limitar el tiempo que se comparte y muchas otras funciones. 
-
 ![2-composefile-filebrowser](./ejercicio2.assets/2-composefile-filebrowser.JPG)
 
 

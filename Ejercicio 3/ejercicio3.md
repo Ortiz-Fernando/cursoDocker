@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-# Tarea 3
-
-> Realizado por ORTIZ GONZALEZ Fernando
-
-[TOC]
-
-## Trabajo Local
-
-1. 
-=======
 # Ejercicio 3 - Imagen con Dockerfile 
 Aplicación web
 
@@ -128,9 +117,9 @@ Vista de la salida por el navegador del script ``fecha.php``, desde el contenedo
 
 # Videoclip
 
-## **Enlace del videoclip**
+## Enlaces y descripción
 
 - Incluye: presentación, entrada a GitHub, muestra de uno de los ejercicios de Docker.
 
-  
->>>>>>> ejercicio3
+  [Pincha aquí para ver el video](https://www.loom.com/share/16d3602751c143e6b1592eec1c5c4d6c?sid=a2e28fb8-02dc-4e6d-887c-2a88f16ea529)
+
