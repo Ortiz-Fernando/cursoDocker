@@ -16,27 +16,59 @@
 
 -----------------------------------
 
+## Aplicación FileBrowser
+
+Explicación breve de cómo funciona esta aplicación y qué hace.
+
+La aplicación permite gestionar y visualizar archivos y directorios desde un navegador web (localhost en este caso), como si fuera un explorador de archivos (parecido al *Explorador de Windows* , permitiendo subir, descargar, renombrar y eliminar archivos. Además, se puede compartir, limitar el acceso por contraseña, crear usuarios y privilegios, limitar el tiempo que se comparte y muchas otras funciones. 
+
 ## Escribir un fichero ``compose.yaml``
 
-1. Escribir un fichero ``compose.yaml`` para desplegarla. Los datos se pueden
-   guardar utilizando volúmenes o utilizando bind-mount
+1. Escribir un fichero ``compose.yaml`` para desplegarla. Los datos se pueden guardar utilizando volúmenes (/config) y utilizando bind-mount (/data).
+
+​	![2-archivo-yaml](./ejercicio2.assets/2-archivo-yaml.JPG)
 
 
 
-Entregar, al menos, las siguientes capturas de pantalla y los comandos y/o
+## Aplicación FileBrowser
 
-operaciones con Docker Desktop empleados para resolver el ejercicio:
+Explicación breve de cómo funciona esta aplicación y qué hace.
 
-- Captura de pantalla y documento donde se vea el fichero `docker-compose.yaml` que has creado.
+La aplicación permite gestionar y visualizar archivos y directorios desde un navegador web (localhost en este caso), como si fuera un explorador de archivos (parecido al *Explorador de Windows* , permitiendo subir, descargar, renombrar y eliminar archivos. Además, se puede compartir, limitar el acceso por contraseña, crear usuarios y privilegios, limitar el tiempo que se comparte y muchas otras funciones. 
+
+![2-composefile-filebrowser](./ejercicio2.assets/2-composefile-filebrowser.JPG)
 
 
+
+## Almacenamiento en FileBrowser
 
 - Captura de pantalla donde se vean los volúmenes/carpetas donde se han almacenado los datos.
 
-
-
-- Captura de pantalla donde se vea la aplicación funcionando, sube algún fichero, cambia el lenguaje a español...
+![2-container-volume-and-mounts](./ejercicio2.assets/2-container-volume-and-mounts.JPG)
 
 
 
-- Explicar brevemente cómo funciona esta aplicación y qué hace.
+## Cambios en FileBrowser
+
+- Captura de pantalla donde se vea la aplicación funcionando, sube algún fichero, cambia el lenguaje a español, cambio de tema a colores claros.
+
+​	
+
+![2-container-ej2-nav](./ejercicio2.assets/2-container-ej2-nav.JPG)
+
+![2-filebrowser-create-files](./ejercicio2.assets/2-filebrowser-create-files.JPG)
+
+![2-filebrowser-files-volume](./ejercicio2.assets/2-filebrowser-files-volume.JPG)
+
+
+
+![2-filebrowser-config-change](./ejercicio2.assets/2-filebrowser-config-change.JPG)
+
+
+
+
+
+
+
+
+
