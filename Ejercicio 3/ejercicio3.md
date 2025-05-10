@@ -1,4 +1,4 @@
-# Ejercicio 3 - imagen con Dockerfile -
+# Ejercicio 3 - Imagen con Dockerfile 
 Aplicación web
 
 > Para la realización de este ejercicio es necesario tener una cuenta en
@@ -18,20 +18,25 @@ Aplicación web
 
 ## Escribir un fichero ``Dockerfile``
 
-Necesitamos un fichero **Dockerfile** que automatice las siguientes
-operaciones para crear una imagen que contenga un servidor con un sitio
-web y un script php. Características de la imagen:
-
-- Usa un contenedor que ejecute una instancia de la imagen ``php:7.4-
-  apache`` , que se llame ``ejercicio3`` y que sea accesible desde un
-  navegador en el puerto 8000.
-- Coloca en el directorio raíz del servicio web ( ``/var/www/html`` ) un "sitio
-  web" donde figure tu nombre - el sitio deberá tener al menos un
-  archivo``index.html`` sencillo y un archivo ``.css``
-- Coloca en ese mismo directorio raíz el siguiente script php , llámalo
-  ``fecha.php``
+Necesitamos un fichero **Dockerfile** que automatice las siguientes operaciones para crear una imagen que contenga un servidor con un sitio web y un script php. Características de la imagen:
 
 
+
+- Usa un contenedor que ejecute una instancia de la imagen ``php:7.4-apache`` , que se llame ``ejercicio3`` y que sea accesible desde un navegador en el puerto 8000.
+
+  
+
+  ![](./ejercicio3.assets/3-file-dockerfile.JPG)
+
+  *Aqui se observa el fichero Dockerfile que es el encargado desde un ``apache:7.4`` copiar el directorio del website a la configuracion de ``PHP``  para poder ejecutar el ``index.html`` y el ``fecha.php``.*
+
+  
+
+- Coloca en el directorio raíz del servicio web ( ``/var/www/html`` ) un "sitio web" donde figure tu nombre - el sitio deberá tener al menos un archivo``index.html`` sencillo y un archivo ``.css``
+
+  ![](./ejercicio3.assets/3-folder-website.JPG)
+
+- Coloca en ese mismo directorio raíz el siguiente script php , llámalo ``fecha.php``
 
 ```php
 <?php
@@ -46,10 +51,11 @@ echo "<p>Hora: $hora_actual< p>";
 ?>
 ```
 
+- Ver la salida del script ``fecha.php`` y de la página ``index.html`` en el navegador.
 
+![](./ejercicio3.assets/3-website-container-php.JPG)
 
-- Ver la salida del script ``fecha.php`` y de la página ``index.html`` en el
-  navegador.
+Vista de la salida por el navegador del script ``fecha.php``, desde el contenedor creado con la imagen inicial automatizada por el fichero **Dockerfile**.
 
 
 
@@ -58,34 +64,61 @@ echo "<p>Hora: $hora_actual< p>";
 **Una vez creada la imagen, súbela a tu cuenta de Docker Hub**
 
 - Borra la imagen de tu Docker local
+
+  ![](./ejercicio3.assets/3-website-container-pull-local.JPG)
+
 - Baja ('pull') de tu cuenta la imagen que acabas de subir
+
+  ![](./ejercicio3.assets/3-website-container-pull-hub.JPG)
+
 - Muestra las imágenes que tienes
-- Ejecuta un contenedor usando esa imagen
+
+  ![](./ejercicio3.assets/3-website-container-pull-hub2.JPG)
+
+- Ejecuta un contenedor usando esa imagen coonfigurado en el puerto ``1234:80`` en lugar del ``8080:80`` como el inicial.
+
+  ![](./ejercicio3.assets/3-website-container-new.JPG)
 
 
 
 ## Capturas de pantalla
 
-Deberás entregar, al menos, las siguientes capturas de pantalla, los
-comandos empleados y/o operaciones con Docker Desktop para resolver
-cada apartado:
+- Creación inicial de la imagen inicial a partir del siguiente script:
 
-- creación inicial del contenedor - documenta los pasos hasta el borrado del mismo
-- bloque de código con el **Dockerfile**
-- creación de la nueva imagen.
-- subida de la imagen a tu cuenta de Docker Hub.
-- operación de **'pull'** de la imagen de Docker Hub
-- creación de un nuevo contenedor con esa imagen y su ejecución. Cambia el puerto del contenedor, por ejemplo, ``- p 1234:80``
-- el acceso al navegador con la página ``html`` y con el script ``php``
+  ```bash
+  docker build -t ortizfernando/ejercicio3:v1.0
+  ```
+
+  *Con este ``script`` indicamos a Docker que construiremos en el usuario (**ortizfernando**), la imagen **ejercicio3**, en su **version 1.0**. La cual dará como salida la siguiente imagen, permitiendo su **run** del contenedor inicial para desplegar.*
+
+  
+
+  ![3-build-website-image](./ejercicio3.assets/3-build-website-image.JPG)
+
+​	![](./ejercicio3.assets/3-website-container.JPG)
 
 
 
+- Creación de la nueva imagen.
+
+  ![](./ejercicio3.assets/3-build-website-image-built.JPG)
+
+- Subida de la imagen a tu cuenta de Docker Hub.
+
+  ![](./ejercicio3.assets/3-website-container-push-hub.JPG)
+
+- Acceso al navegador con la página ``html`` y con el script ``php``
+
+![](./ejercicio3.assets/3-website-container-php-new.JPG)
+
+![](./ejercicio3.assets/3-website-container-new2.JPG)
 
 
-## Videoclip
 
-**Realiza un videoclip con el siguiente contenido:**
+# Videoclip
 
-- Preséntate, debe verse tu cara
-- Entra en GitHub y muestra tu repositorio
-- Escoge uno de los tres ejercicios y resuelve alguno de los puntos solicitados, por ejemplo, del ejercicio 1, muestra que se están ejecutando los dos contenedores y conéctate a la BD utilizando tu usuario personal
+## **Enlace del videoclip**
+
+- Incluye: presentación, entrada a GitHub, muestra de uno de los ejercicios de Docker.
+
+  
